@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<addon
+	
+id="plugin.video.vntv"
+ 
+version="1.0.1"
+	
+name="My Live TV"
+	
+provider-name="Silverfox">
+	
+<requires>
+<import addon="xbmc.python" version="2.1.0"/>
+</requires>
+	
+<extension point="xbmc.python.pluginsource" library="vntv.py">
+<provides>video</provides>
+</extension>
+
+<extension point="xbmc.addon.metadata">
+
+<platform>all</platform>
+		
+<language>en vi</language>
+		
+<summary lang="en">My Live TV</summary>
+
+<summary lang="vi">My Live TV Việt Nam</summary>
+		
+<description lang="en">
+This plugin allows you to watch many live TV channels using XBMC interface in Android, iOS or Windows with video streams over the internet</description>
+		
+</extension>
+
+</addon>
