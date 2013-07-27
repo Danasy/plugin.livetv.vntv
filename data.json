@@ -1,14 +1,30 @@
 ﻿{
-    "timestamp":"1370385663",
+    "timestamp":"1374890052",
     "sources": {
-        "VietfaceTV": {
+
+        "vietface": {
             "url": "rtmp://206.217.221.127/vietface/",
-            "swfurl": "http://thvl.vn/vplayer.swf",
-            "pageurl": "http://nguoiviet.tv/VietFaceTV",
+            "swfurl": "http://www.viettv24.com/player.swf",
+            "pageurl": "http://www.viettv24.com/main/?language=vi",
             "token": "",
             "app": ""
         },
 
+        "vpoptv": {
+            "url": "rtmp://206.217.221.127/liveStream",
+            "swfurl": "http://www.viettv24.com/player.swf",
+            "pageurl": "http://www.viettv24.com/main/?language=vi",
+            "token": "",
+            "app": "liveStream"
+        },
+        "vmusic": {
+            "url": "rtmp://evietmusic.com/liveStream",
+            "swfurl": "http://www.viettv24.com/player.swf",
+            "pageurl": "http://www.viettv24.com/main/?language=vi",
+            "token": "",
+            "app": "liveStream"
+        },
+        
         "vtc": {
             "url": "rtmp://111.91.233.197/live",
             "swfurl": "http://vtc.com.vn/player_6_10_2011.swf",
@@ -33,6 +49,36 @@
     },
     "channels": {
 
+         "vietface": {
+            "title": "VietfaceTV",
+            "logo": "vietfacetv.png",
+            "desc": "Vietface TV",
+            "src": {
+                "id":"vietface",
+                "playpath": "vface_1",
+                "referer": ""
+            }
+        },
+         "vpoptv": {
+            "title": "Viet TV24",
+            "logo": "vpoptv.png",
+            "desc": "Vpop TV",
+            "src": {
+                "id":"vpoptv",
+                "playpath": "vpoptv_1",
+                "referer": ""
+            }
+        },
+         "vmusic": {
+            "title": "Viet TV24",
+            "logo": "vpoptv.png",
+            "desc": "Viet Music TV",
+            "src": {
+                "id":"vmusic",
+                "playpath": "viettv24_1",
+                "referer": ""
+            }
+        },
 
         "vtv1": {
             "title": "VTV1",
@@ -390,17 +436,6 @@
             }
         }
 
-
-        "VietfaceTV": {
-            "title": "VietfaceTV",
-            "logo": "vietfacetv.png",
-            "desc": "Vietface TV",
-            "src": {
-                "id":"VietfaceTV",
-                "playpath": "vface_1",
-                "referer": ""
-            }
-        }
     },
     "directories": {
         "root": {
@@ -408,6 +443,9 @@
             "logo":  "",
             "desc": "root menu",
             "content": [
+            {"type":"chn","id":"vietface"},
+            {"type":"chn","id":"vpoptv"},
+            {"type":"chn","id":"vmusic"},
             {"type":"chn","id":"vtv1"},
             {"type":"chn","id":"vtv2"},
             {"type":"chn","id":"vtv3"},
